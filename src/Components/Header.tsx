@@ -1,23 +1,28 @@
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
-  background: #1e293b;
-  color: white;
+  background: white;
+  color: black;
   padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
+const NavLinks = styled.div`
+  display: flex;
+  gap: 15px;
+`;
+
 export default function Header() {
   return (
     <HeaderContainer>
-      <div>
-        <span>Welcome</span>
+      <span>Welcome</span>
+      <NavLinks>
         <span>Products</span>
         <span>Contact</span>
         <span>About us</span>
-      </div>
+      </NavLinks>
     </HeaderContainer>
   );
 }
