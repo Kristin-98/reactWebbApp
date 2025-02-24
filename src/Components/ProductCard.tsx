@@ -11,6 +11,7 @@ export default function ProductCard(props: Props) {
     <CardLink to={`product/${props.product.slug}/${props.product.id}`}>
       <ProductImage src={props.product.images[0]} alt={props.product.name} />
       <ProductName>{props.product.name}</ProductName>
+      <ProductPrice>{props.product.price.toLocaleString("sv-SE")} kr</ProductPrice>
       <ProductCategory>Lampor</ProductCategory>
     </CardLink>
   );
@@ -41,6 +42,10 @@ const ProductImage = styled.img`
 const ProductName = styled.h3`
   margin: 8px 0;
   font-size: 18px;
+  color: #333;
+`;
+
+const ProductPrice = styled.span`
   color: #333;
 `;
 

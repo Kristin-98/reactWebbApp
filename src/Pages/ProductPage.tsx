@@ -22,7 +22,14 @@ export default function ProductPage() {
       </ImageSection>
       <ProductDetails>
         <ProductName>{product.name}</ProductName>
-        <p>Beskrivning av produkten</p>
+        <span>{product.price.toLocaleString("sv-SE")} kr</span>
+        <span>Add To Cart</span>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos optio
+          temporibus totam dolorum, molestias exercitationem possimus
+          praesentium quod alias ratione rerum suscipit aspernatur quas a dicta
+          dolorem saepe iste harum!
+        </p>
       </ProductDetails>
     </PageContainer>
   );
