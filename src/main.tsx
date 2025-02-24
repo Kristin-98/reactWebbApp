@@ -11,7 +11,8 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<MainLayout />}>          
           <Route index element={<HomePage />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="product/:slug/:id" element={<NotFoundPage />} />
+          {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
