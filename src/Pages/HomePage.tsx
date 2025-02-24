@@ -19,10 +19,10 @@ const Textcontainer = styled.div`
   text-align: center;
   padding: 20px;
   margin: 20px;
-  background-color: #cec8bc;
+  background-color: #eae3d8;
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #333;
     margin-bottom: 10px;
   }
@@ -72,16 +72,27 @@ export default function HomePage() {
           </p>
         </Textcontainer>
       </div>
-      <div>
-        <section>
-          <StyledHeading>Popular Products</StyledHeading>
-          <ProductGrid>
-            {mockedProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </ProductGrid>
-        </section>
-      </div>
+      <section>
+        <StyledHeading>Popular Products</StyledHeading>
+        <ProductGrid>
+          {mockedProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </ProductGrid>
+      </section>
+      <section>
+        <Textcontainer>
+          <h2>Join Our Newsletter and Stay Inspired!</h2>
+          <p>
+            Sign up for our newsletter and bring fresh inspiration into your
+            home! Be the first to discover our latest collections, exclusive
+            offers, and expert design tips. Whether you're looking for stylish
+            decor ideas, seasonal trends, or special promotions, we've got you
+            covered. Don't miss out—subscribe today and let us help you create a
+            beautiful and inviting space!
+          </p>
+        </Textcontainer>
+      </section>
     </>
   );
 }
