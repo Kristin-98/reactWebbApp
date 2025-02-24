@@ -24,7 +24,7 @@ const CardLink = styled(Link)`
   text-decoration: none;
   padding: 16px;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: rgb(237, 232, 225);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 
