@@ -12,7 +12,6 @@ const BackgroundDiv = styled.div`
   align-items: center;
   justify-content: center;
   color: black;
-  font-family: "Arial", sans-serif;
 `;
 
 const Textcontainer = styled.div`
@@ -20,7 +19,6 @@ const Textcontainer = styled.div`
   text-align: center;
   padding: 20px;
   margin: 20px;
-  font-family: "Arial", sans-serif;
   background-color: #cec8bc;
 
   h2 {
@@ -34,6 +32,21 @@ const Textcontainer = styled.div`
     color: #555;
     line-height: 1.6;
   }
+`;
+
+const ProductGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+`;
+
+const StyledHeading = styled.h2`
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin: 60px;
+  font-weight: bold;
 `;
 
 export default function HomePage() {
@@ -61,12 +74,12 @@ export default function HomePage() {
       </div>
       <div>
         <section>
-          <h2>lampor</h2>
-          <div className="flex gap-2">
+          <StyledHeading>Popular Products</StyledHeading>
+          <ProductGrid>
             {mockedProducts.map((product) => (
-              <ProductCard product={product} />
+              <ProductCard key={product.id} product={product} />
             ))}
-          </div>
+          </ProductGrid>
         </section>
       </div>
     </>
