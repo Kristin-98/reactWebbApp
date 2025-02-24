@@ -17,8 +17,8 @@ const BackgroundDiv = styled.div`
 const Textcontainer = styled.div`
   max-width: 100%;
   text-align: center;
-  padding: 20px;
-  margin: 20px;
+  padding: 40px;
+  margin: 50px;
   background-color: #eae3d8;
 
   h2 {
