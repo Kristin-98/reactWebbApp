@@ -9,7 +9,7 @@ interface Props {
 export default function ProductCard(props: Props) {
   return (
     <CardLink to={`product/${props.product.slug}/${props.product.id}`}>
-      <ProductImage src={props.product.imageUrl} />
+      <ProductImage src={props.product.images[0]} alt={props.product.name} />
       <ProductName>{props.product.name}</ProductName>
       <ProductCategory>Lampor</ProductCategory>
     </CardLink>

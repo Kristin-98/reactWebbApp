@@ -54,7 +54,7 @@ export default function HomePage() {
     <>
       <div>
         <BackgroundDiv>
-          <h1>Home Page</h1>
+          <h1></h1>
         </BackgroundDiv>
         <Textcontainer>
           <h2>Creating unique spaces to live, work and play</h2>
