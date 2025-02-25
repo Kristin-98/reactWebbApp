@@ -2,53 +2,6 @@ import styled from "styled-components";
 import ProductCard from "../Components/ProductCard";
 import { mockedProducts } from "../Data";
 
-const BackgroundDiv = styled.div`
-  height: 600px;
-  width: 100%;
-  background-image: url("https://cdn.decorilla.com/online-decorating/wp-content/uploads/2023/02/interior-designers-near-me-scaled.jpeg?width=900");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-`;
-
-const Textcontainer = styled.div`
-  max-width: 100%;
-  text-align: center;
-  padding: 40px;
-  margin: 50px;
-  background-color: #eae3d8;
-
-  h2 {
-    font-size: 1.6rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-`;
-
-const ProductGrid = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-`;
-
-const StyledHeading = styled.h2`
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-  margin: 60px;
-  font-weight: bold;
-`;
-
 export default function HomePage() {
   return (
     <>
@@ -96,3 +49,50 @@ export default function HomePage() {
     </>
   );
 }
+
+const BackgroundDiv = styled.div`
+  height: 600px;
+  width: 100%;
+  background-image: url("https://cdn.decorilla.com/online-decorating/wp-content/uploads/2023/02/interior-designers-near-me-scaled.jpeg?width=900");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+`;
+
+const Textcontainer = styled.div`
+  max-width: 100%;
+  text-align: center;
+  padding: 40px;
+  margin: 50px;
+  background-color: #eae3d8;
+
+  h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+`;
+
+const ProductGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+`;
+
+const StyledHeading = styled.h2`
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin: 60px;
+  font-weight: bold;
+`;

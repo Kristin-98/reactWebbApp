@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Header() {
@@ -6,7 +7,7 @@ export default function Header() {
       <NavLinks>
         <span>Products</span>
         <span>Contact</span>
-        <span>About us</span>
+        <Link to="/about">About us</Link>
       </NavLinks>
       <WelcomeText>Serene Interiors</WelcomeText>
       <span>🔍🗑</span>
@@ -26,6 +27,15 @@ const HeaderContainer = styled.header`
 const NavLinks = styled.div`
   display: flex;
   gap: 15px;
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  a:hover {
+    color: #777;
+  }
 `;
 
 const WelcomeText = styled.span`
