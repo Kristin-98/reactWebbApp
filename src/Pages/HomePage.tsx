@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Newsletter from "../Components/Newsletter";
 import ProductCard from "../Components/ProductCard";
 import SpringSale from "../Components/SpringSale";
 import { mockedProducts } from "../Data";
@@ -37,19 +38,7 @@ export default function HomePage() {
           ))}
         </ProductGrid>
       </section>
-      <section>
-        <Textcontainer>
-          <h2>Join Our Newsletter and Stay Inspired!</h2>
-          <p>
-            Sign up for our newsletter and bring fresh inspiration into your
-            home! Be the first to discover our latest collections, exclusive
-            offers, and expert design tips. Whether you're looking for stylish
-            decor ideas, seasonal trends, or special promotions, we've got you
-            covered. Don't miss out—subscribe today and let us help you create a
-            beautiful and inviting space!
-          </p>
-        </Textcontainer>
-      </section>
+      <Newsletter />
     </>
   );
 }

@@ -12,7 +12,7 @@ export default function ProductCard(props: Props) {
       <ProductImage src={props.product.images[0]} alt={props.product.name} />
       <ProductName>{props.product.name}</ProductName>
       <ProductPrice>{props.product.price.toLocaleString("sv-SE")} kr</ProductPrice>
-      <ProductCategory>Lampor</ProductCategory>
+      <ProductCategory>Category</ProductCategory>
     </CardLink>
   );
 }

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import Newsletter from "../Components/Newsletter";
 
 interface Product {
   id: number;
@@ -32,20 +34,72 @@ const SpringSalePage: React.FC = () => {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h2>Spring Sale</h2>
-      <div>
+    <PageContainer>
+      <Title>Spring Sale</Title>
+      <ProductGrid>
         {products.map((product) => (
-          <div key={product.id}>
-            <h3>{product.title}</h3>
-            <img src={product.image} alt={product.title} />
-            <p>{product.description}</p>
-            <strong>{product.price} KR</strong>
-          </div>
+          <ProductCard key={product.id}>
+            <ProductImage src={product.image} alt={product.title} />
+            <ProductTitle>{product.title}</ProductTitle>
+            <ProductDescription>{product.description}</ProductDescription>
+            <ProductPrice>{product.price} KR</ProductPrice>
+          </ProductCard>
         ))}
-      </div>
-    </div>
+      </ProductGrid>
+      <Newsletter />
+    </PageContainer>
   );
 };
 
 export default SpringSalePage;
+
+const PageContainer = styled.div`
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+`;
+
+const Title = styled.h2`
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+`;
+
+const ProductGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+`;
+
+const ProductCard = styled.div`
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #eae3d8;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+const ProductImage = styled.img`
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+`;
+
+const ProductTitle = styled.h3`
+  font-size: 1.5rem;
+  margin: 10px 0;
+`;
+
+const ProductDescription = styled.p`
+  font-size: 1rem;
+  color: #555;
+`;
+
+const ProductPrice = styled.strong`
+  font-size: 1.2rem;
+  color: #333;
+`;
