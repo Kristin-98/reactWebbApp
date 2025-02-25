@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export default function SpringSale() {
   return (
-    <StyledLink to="">
+    <StyledLink to="/spring">
       <SaleContainer>
         <TextSection>
           <Title>Serene Interiors – Spring Sale is Here!</Title>

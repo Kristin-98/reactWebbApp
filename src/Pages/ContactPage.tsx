@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SpringSale from "../Components/SpringSale";
 
 export default function ContactPage() {
   return (
@@ -31,6 +32,7 @@ export default function ContactPage() {
         src="https://images.prismic.io/royaldesign/a2448e97-a181-4630-8b45-c91162dd6ba3_gubi.jpg?auto=compress,format&rect=0,0,2000,2666&w=1440&h=1920"
         alt="Serene Interiors Design"
       />
+      <SpringSale />
     </ContactContainer>
   );
 }
