@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ProductCard from "../Components/ProductCard";
+import SpringSale from "../Components/SpringSale";
 import { mockedProducts } from "../Data";
 
 export default function HomePage() {
@@ -7,7 +8,7 @@ export default function HomePage() {
     <>
       <div>
         <BackgroundDiv>
-          <h1></h1>
+          <h1>Serene Interior</h1>
         </BackgroundDiv>
         <Textcontainer>
           <h2>Creating unique spaces to live, work and play</h2>
@@ -25,6 +26,9 @@ export default function HomePage() {
           </p>
         </Textcontainer>
       </div>
+      <section>
+        <SpringSale />
+      </section>
       <section>
         <StyledHeading>Popular Products</StyledHeading>
         <ProductGrid>
@@ -65,8 +69,9 @@ const BackgroundDiv = styled.div`
 const Textcontainer = styled.div`
   max-width: 100%;
   text-align: center;
-  padding: 40px;
-  margin: 50px;
+  padding: 20px;
+  height: 200px;
+  margin: 30px;
   background-color: #eae3d8;
 
   h2 {
@@ -76,7 +81,7 @@ const Textcontainer = styled.div`
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #555;
     line-height: 1.6;
   }
