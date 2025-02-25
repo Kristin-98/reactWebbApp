@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <NavLinks>
-        <span>Products</span>
+      <Link to="/products">Products</Link>
         <span>Contact</span>
         <Link to="/about">About us</Link>
       </NavLinks>
