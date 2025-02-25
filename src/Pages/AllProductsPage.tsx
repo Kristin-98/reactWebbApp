@@ -13,6 +13,20 @@ export default function AllProductsPage() {
           ))}
         </ProductGrid>
       </section>
+      <section>
+        <ProductGrid>
+          {mockedProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </ProductGrid>
+      </section>
+      <section>
+        <ProductGrid>
+          {mockedProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </ProductGrid>
+      </section>
     </PageContainer>
   );
 }

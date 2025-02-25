@@ -5,11 +5,11 @@ export default function Header() {
   return (
     <HeaderContainer>
       <NavLinks>
-      <Link to="/products">Products</Link>
-        <span>Contact</span>
+        <Link to="/products">Products</Link>
+        <Link to="/contact">Contact</Link>
         <Link to="/about">About us</Link>
       </NavLinks>
-      <WelcomeText>Serene Interiors</WelcomeText>
+      <WelcomeText to="/">Serene Interiors</WelcomeText>
       <span>🔍🗑</span>
     </HeaderContainer>
   );
@@ -38,8 +38,10 @@ const NavLinks = styled.div`
   }
 `;
 
-const WelcomeText = styled.span`
+const WelcomeText = styled(Link)`
   position: absolute;
   left: 680px;
   text-align: center;
+  color: #333;
+  text-decoration: none;
 `;
