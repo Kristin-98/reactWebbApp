@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Newsletter from "../Components/Newsletter";
 import SpringSale from "../Components/SpringSale";
 
 export default function ContactPage() {
@@ -49,6 +50,7 @@ export default function ContactPage() {
         alt="Serene Interiors Design"
       />
       <SpringSale />
+      <Newsletter />
     </ContactContainer>
   );
 }

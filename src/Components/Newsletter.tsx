@@ -1,6 +1,16 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 export default function Newsletter() {
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim() === "") return;
+    setIsSubmitted(true);
+  };
+
   return (
     <section>
       <Textcontainer>
@@ -20,12 +30,26 @@ export default function Newsletter() {
             covered. Don't miss out—subscribe today and let us help you create a
             beautiful and inviting space!
           </p>
-          <NewsletterBtn>E-mail...</NewsletterBtn>
+          {isSubmitted ? (
+            <SuccessMessage>✅ Thank you for subscribing!</SuccessMessage>
+          ) : (
+            <form onSubmit={handleSubmit}>
+              <NewsletterInput
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email..."
+                required
+              />
+              <NewsletterBtn type="submit">Subscribe</NewsletterBtn>
+            </form>
+          )}
         </div>
       </Textcontainer>
     </section>
   );
 }
+
 const Textcontainer = styled.div`
   max-width: 100%;
   text-align: center;
@@ -58,19 +82,28 @@ const Textcontainer = styled.div`
   }
 `;
 
-const NewsletterBtn = styled.div`
-  font-size: 20px;
-  color: #333;
-  width: 500px;
-  justify-content: center;
-  background-color: rgb(251, 251, 251);
-  text-align: center;
-  border-radius: 4px;
+const NewsletterInput = styled.input`
   padding: 10px;
-  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+`;
 
+const NewsletterBtn = styled.button`
+  padding: 10px 20px;
+  background-color: rgb(71, 70, 70);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
   &:hover {
-    opacity: 0.7;
-    color: #333;
+    background-color: rgb(49, 48, 48);
   }
+`;
+
+const SuccessMessage = styled.p`
+  color: green;
+  font-weight: bold;
 `;

@@ -1,36 +1,40 @@
 import styled from "styled-components";
+import Newsletter from "../Components/Newsletter";
 
 export default function AboutPage() {
   return (
-    <AboutContainer>
-      <Text>
-        <Title>Serene Interiors – Crafting Spaces, Elevating Lives</Title>
-        At <strong>Serene Interiors</strong>, we believe that a beautifully
-        designed space has the power to inspire, comfort, and transform. Our
-        passion is creating elegant, harmonious interiors that reflect both
-        style and functionality.
-        <br />
-        <br />
-        With a keen eye for detail and a commitment to quality, we curate
-        timeless designs that bring warmth and sophistication to every home.
-        Whether you're looking for a complete makeover or subtle enhancements,
-        Serene Interiors is here to turn your vision into reality.
-        <br />
-        <br />
-        With a keen eye for detail and a commitment to quality, we curate
-        timeless designs that bring warmth and sophistication to every home.
-        Whether you're looking for a complete makeover or subtle enhancements,
-        Serene Interiors is here to turn your vision into reality.
-        <br />
-        <br />
-        Let us help you create a space that feels like home—serene, stylish, and
-        uniquely yours.
-      </Text>
-      <StyledImage
-        src="https://i0.wp.com/barkandchase.com/wp-content/uploads/2023/06/Jarch_A_magazine-worthy_cinematic_photograph_highly_detailed_ph_8ea68015-d606-4e4e-8390-0603ca3c4750.png?w=1024&ssl=1"
-        alt="Serene Interiors Design"
-      />
-    </AboutContainer>
+    <>
+      <AboutContainer>
+        <Text>
+          <Title>Serene Interiors – Crafting Spaces, Elevating Lives</Title>
+          At <strong>Serene Interiors</strong>, we believe that a beautifully
+          designed space has the power to inspire, comfort, and transform. Our
+          passion is creating elegant, harmonious interiors that reflect both
+          style and functionality.
+          <br />
+          <br />
+          With a keen eye for detail and a commitment to quality, we curate
+          timeless designs that bring warmth and sophistication to every home.
+          Whether you're looking for a complete makeover or subtle enhancements,
+          Serene Interiors is here to turn your vision into reality.
+          <br />
+          <br />
+          With a keen eye for detail and a commitment to quality, we curate
+          timeless designs that bring warmth and sophistication to every home.
+          Whether you're looking for a complete makeover or subtle enhancements,
+          Serene Interiors is here to turn your vision into reality.
+          <br />
+          <br />
+          Let us help you create a space that feels like home—serene, stylish,
+          and uniquely yours.
+        </Text>
+        <StyledImage
+          src="https://i0.wp.com/barkandchase.com/wp-content/uploads/2023/06/Jarch_A_magazine-worthy_cinematic_photograph_highly_detailed_ph_8ea68015-d606-4e4e-8390-0603ca3c4750.png?w=1024&ssl=1"
+          alt="Serene Interiors Design"
+        />
+      </AboutContainer>
+      <Newsletter />
+    </>
   );
 }
 
