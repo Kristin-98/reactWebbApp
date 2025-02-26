@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Newsletter from "../Components/Newsletter";
 import ProductCard from "../Components/ProductCard";
@@ -8,7 +9,11 @@ export default function HomePage() {
   return (
     <>
       <div>
-        <BackgroundDiv></BackgroundDiv>
+        <BackgroundDiv>
+          <Link to="/products">
+            <button>View Products</button>
+          </Link>
+        </BackgroundDiv>
         <Textcontainer>
           <h2>Creating unique spaces to live, work and play</h2>
           <p>
@@ -51,6 +56,26 @@ const BackgroundDiv = styled.div`
   align-items: center;
   justify-content: center;
   color: black;
+
+  button {
+    all: unset;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.02);
+      background-color: rgb(65, 65, 64);
+      color: white;
+    }
+  }
 `;
 
 const Textcontainer = styled.div`

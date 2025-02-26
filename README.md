@@ -27,3 +27,13 @@ För att starta utvecklingsservern, kör:
 
 Applikationen körs nu på http://localhost:5173 (eller en annan port beroende på din Vite-konfiguration).
 
+# Kunskapskrav för uppgiften
+[x] 6 Stycken komponenter, varav 2 st "Statefull"
+[x] React Router har använts
+[x] Git & GitHub har använts
+[x] README.md fil
+[x] “CSS i JS“ library. Styled components
+[x] Data från ett web-API (https://fakestoreapi.com/)
+[] Netlify/ Vercel
+[] Muntlig presentation är genomförd
+
