@@ -9,7 +9,9 @@ export default function Header() {
         <Link to="/contact">Contact</Link>
         <Link to="/about">About us</Link>
       </NavLinks>
-      <WelcomeText to="/">Serene Interiors</WelcomeText>
+      <WelcomeText to="/">
+        <h1>Serene Interiors</h1>
+      </WelcomeText>
       <span>🔍</span>
     </HeaderContainer>
   );
@@ -40,7 +42,8 @@ const NavLinks = styled.div`
 
 const WelcomeText = styled(Link)`
   position: absolute;
-  left: 680px;
+  left: 660px;
+  font-size: 10px;
   text-align: center;
   color: #333;
   text-decoration: none;

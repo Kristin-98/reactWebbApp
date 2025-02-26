@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite. Webb-App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Beskrivning
 
-Currently, two official plugins are available:
+Detta projekt är en webbapplikation byggd med React och TypeScript. Applikationen består av sex stycken komponenter, varav två utav dem är statefulla. Den använder även ett externt API för datainhämtning samt Styled Components för styling. Syftet med projektet är att använda React Router för att hantera klientbaserad routing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Installation
 
-## Expanding the ESLint configuration
+Följ dessa steg för att installera och köra projektet lokalt:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Klona detta repository:
+`git clone <repository-url>`
+`cd <projektmapp>`
 
-- Configure the top-level `parserOptions` property like this:
+Installera beroenden:
+`npm install`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Om du vill skapa ett nytt projekt med Vite:
+`npm create vite@latest my-app --template react-ts`
+`cd my-app`
+`npm install`
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+# Körning av applikationen
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+För att starta utvecklingsservern, kör:
+`npm run dev`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Applikationen körs nu på http://localhost:5173 (eller en annan port beroende på din Vite-konfiguration).
+

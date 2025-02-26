@@ -61,7 +61,7 @@ const PageContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 20px;
 `;
 

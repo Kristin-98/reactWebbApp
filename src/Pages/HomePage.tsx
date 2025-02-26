@@ -8,9 +8,7 @@ export default function HomePage() {
   return (
     <>
       <div>
-        <BackgroundDiv>
-          <h1>Serene Interior</h1>
-        </BackgroundDiv>
+        <BackgroundDiv></BackgroundDiv>
         <Textcontainer>
           <h2>Creating unique spaces to live, work and play</h2>
           <p>
