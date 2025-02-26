@@ -10,7 +10,7 @@ export default function Header() {
         <Link to="/about">About us</Link>
       </NavLinks>
       <WelcomeText to="/">Serene Interiors</WelcomeText>
-      <span>🔍🗑</span>
+      <span>🔍</span>
     </HeaderContainer>
   );
 }

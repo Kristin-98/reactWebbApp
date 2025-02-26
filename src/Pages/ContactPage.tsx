@@ -14,7 +14,23 @@ export default function ContactPage() {
           we are dedicated to creating harmonious and stylish spaces that
           reflect your personality and lifestyle. Whether you're planning a full
           home makeover or just looking to refresh your space, we’ll guide you
-          every step of the way.
+          every step of the way. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Quasi, quae modi? Tenetur officiis qui dolorum
+          molestiae vero delectus doloribus. Consequuntur obcaecati ea est a
+          molestias, optio nemo inventore. Placeat, quam?
+        </Paragraph>
+        <Paragraph>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit fugiat
+          necessitatibus sapiente, facere dolores quod velit non tempore culpa
+          voluptates modi illo mollitia praesentium rerum saepe ipsum atque
+          inventore aliquam? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Omnis eius fuga cumque ut autem tenetur, pariatur quisquam totam
+          asperiores minima magnam, sequi earum quidem tempora deserunt libero
+          corrupti rem assumenda! Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Similique officia pariatur at temporibus modi
+          quibusdam hic praesentium reiciendis libero odit repudiandae repellat
+          deleniti, aliquam minima veritatis reprehenderit asperiores corporis
+          velit?
         </Paragraph>
         <Paragraph>
           📍 Visit us in our studio for inspiration and personalized
@@ -46,7 +62,11 @@ const ContactContainer = styled.div`
 
 const TextSection = styled.section`
   margin-bottom: 30px;
+  text-align: left;
   width: 100%;
+  max-width: 1100px;
+  align-items: center;
+  margin-left: 180px;
 `;
 
 const Title = styled.h2`
@@ -59,7 +79,7 @@ const Title = styled.h2`
 const Paragraph = styled.p`
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   color: #555;
   margin-bottom: 15px;

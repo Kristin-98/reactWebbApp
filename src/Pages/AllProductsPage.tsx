@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Newsletter from "../Components/Newsletter";
 import ProductCard from "../Components/ProductCard";
 import { mockedProducts } from "../Data";
 
@@ -27,6 +28,7 @@ export default function AllProductsPage() {
           ))}
         </ProductGrid>
       </section>
+      <Newsletter />
     </PageContainer>
   );
 }
@@ -51,4 +53,3 @@ const ProductGrid = styled.div`
   justify-content: center;
   padding: 20px;
 `;
-
