@@ -42,7 +42,8 @@ const NavLinks = styled.div`
 
 const WelcomeText = styled(Link)`
   position: absolute;
-  left: 660px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 10px;
   text-align: center;
   color: #333;
