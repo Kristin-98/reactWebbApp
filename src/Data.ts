@@ -14,6 +14,10 @@ export const mockedProducts: Product[] = [
     price: 9599,
     images: [
       "https://media.royaldesign.se/1/tradition-flowerpot-vp9-bordslampa-portabel-4?quality=80&w=1366",
+      "https://media.royaldesign.se/1/tradition-flowerpot-vp9-bordslampa-portabel-132?quality=80&w=1920",
+      "https://media.royaldesign.se/1/tradition-flowerpot-vp9-bordslampa-portabel-133?quality=80&w=1920",
+      "https://media.royaldesign.se/1/tradition-flowerpot-vp9-bordslampa-portabel-135?quality=80&w=1920",
+      "https://media.royaldesign.se/1/tradition-flowerpot-vp9-bordslampa-portabel-137?quality=80&w=1920",
     ],
   },
   {
@@ -36,6 +40,10 @@ export const mockedProducts: Product[] = [
     price: 2039,
     images: [
       "https://media.royaldesign.se/1/new-works-kizu-portable-bordslampa-63?quality=80&w=1366",
+      "https://media.royaldesign.se/1/new-works-kizu-bordslampa-portabel-71?quality=80&w=1920",
+      "https://media.royaldesign.se/1/new-works-kizu-bordslampa-portabel-73?quality=80&w=1920",
+      "https://media.royaldesign.se/1/new-works-kizu-bordslampa-portabel-74?quality=80&w=1920",
+      "https://media.royaldesign.se/1/new-works-kizu-bordslampa-portabel-76?quality=80&w=1920",
     ],
   },
   {

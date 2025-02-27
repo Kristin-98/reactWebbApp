@@ -4,6 +4,7 @@ import Newsletter from "../Components/Newsletter";
 import ProductCard from "../Components/ProductCard";
 import SpringSale from "../Components/SpringSale";
 import { mockedProducts } from "../Data";
+import CategoryCard from "../Components/CategoryCard";
 
 export default function HomePage() {
   return (
@@ -41,6 +42,7 @@ export default function HomePage() {
           ))}
         </ProductGrid>
       </section>
+      <CategoryCard/>
       <Newsletter />
     </>
   );

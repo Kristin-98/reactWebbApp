@@ -54,7 +54,7 @@ const Textcontainer = styled.div`
   max-width: 100%;
   text-align: center;
   padding: 20px;
-  margin: 70px 30px;
+  margin: 50px 30px;
   display: flex;
   background-color: #eae3d8;
 
