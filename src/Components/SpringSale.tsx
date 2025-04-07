@@ -47,8 +47,15 @@ const SaleContainer = styled.div`
   padding: 40px;
   height: 500px;
   border-radius: 10px;
-  margin: 60px;
   background-color: #2e2d2d;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    margin: 30px;
+    gap: 20px;
+  }
 
   @media (max-width: 480px) {
     flex-direction: column;

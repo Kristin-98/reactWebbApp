@@ -26,11 +26,16 @@ export default function CategoryCard() {
 const CategoryStyle = styled.div`
   display: flex;
   justify-content: center;
-  gap: 20px;  
-  margin: 40px;
+  gap: 20px; 
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 
   @media (max-width: 480px) {
-    flex-direction: column;
+    flex-direction: column;  
     align-items: center;
     gap: 30px;
   }
@@ -42,8 +47,8 @@ const CategoryItem = styled.div`
   cursor: pointer;
 
   img {
-    height: 35rem;
-    width: 40rem;
+    height: 30rem;
+    width: 30rem;
     border-radius: 10px;
     display: block;
     object-fit: cover;
@@ -55,6 +60,8 @@ const CategoryItem = styled.div`
 
     @media (max-width: 480px) {
       margin: 0;
+      height: 20rem;
+      width: 20rem;
     }
   }
 

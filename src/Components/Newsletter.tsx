@@ -51,11 +51,13 @@ export default function Newsletter() {
 }
 
 const Textcontainer = styled.div`
-  max-width: 100%;
+  max-width: 100%;  
   text-align: center;
   padding: 20px;
-  margin: 50px 30px;  
+  margin: 20px;
+  border-radius: 5px;
   background-color: #eae3d8;
+  box-sizing: border-box;
 
   h2 {
     font-size: 1.6rem;
@@ -71,13 +73,43 @@ const Textcontainer = styled.div`
   }
 
   img {
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
     border-radius: 10px;
+    margin: 20px auto;
   }
 
   div {
     display: inline-block;
+  }
+
+  
+  @media (max-width: 768px) {
+    padding: 15px;
+    margin: 30px 20px;
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+    margin: 20px 10px;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    img {
+      max-width: 280px;
+    }
   }
 `;
 
@@ -87,6 +119,15 @@ const NewsletterInput = styled.input`
   border-radius: 5px;
   font-size: 16px;
   margin-right: 10px;
+  width: 100%; /* Gör så inputfältet tar upp hela bredden på små skärmar */
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 const NewsletterBtn = styled.button`
@@ -96,13 +137,30 @@ const NewsletterBtn = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
+  margin: 1rem;
+  width: auto;
+
   &:hover {
     background-color: rgb(49, 48, 48);
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 12px;
   }
 `;
 
 const SuccessMessage = styled.p`
   color: green;
   font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+ 
+ @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
+

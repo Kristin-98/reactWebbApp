@@ -47,6 +47,13 @@ const AboutContainer = styled.div`
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    margin: 20px;
+    padding: 15px;
+  }
 `;
 
 const Title = styled.h3`
@@ -54,6 +61,14 @@ const Title = styled.h3`
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 const Text = styled.p`
@@ -62,6 +77,16 @@ const Text = styled.p`
   color: #555;
   text-align: justify;
   margin: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    margin: 10px;
+  }
 `;
 
 const StyledImage = styled.img`
@@ -71,4 +96,15 @@ const StyledImage = styled.img`
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    max-width: 30rem;
+    height: 30rem;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 20rem;
+    height: 20rem;
+  }
 `;
+

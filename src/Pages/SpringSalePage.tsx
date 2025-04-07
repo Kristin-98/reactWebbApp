@@ -54,7 +54,6 @@ const SpringSalePage: React.FC = () => {
 export default SpringSalePage;
 
 const PageContainer = styled.div`
-  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -67,6 +66,7 @@ const Title = styled.h2`
 
 const ProductGrid = styled.div`
   display: grid;
+  padding-bottom: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 `;

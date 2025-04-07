@@ -53,23 +53,19 @@ const PageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 4rem 2rem;
-  max-width: 1200px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    padding: 3rem 1.5rem;
     gap: 1.5rem;
   }
 
   @media (max-width: 480px) {
-    padding: 2rem 1rem;
     gap: 1rem;
   }
 `;
 
 const BackgroundDiv = styled.div`
-  height: 600px;
+  height: 80vh;
   width: 100%;
   background-image: url("https://cdn.decorilla.com/online-decorating/wp-content/uploads/2023/02/interior-designers-near-me-scaled.jpeg?width=900");
   background-size: cover;
@@ -104,7 +100,7 @@ const Textcontainer = styled.div`
   max-width: 100%;
   text-align: center;
   padding: 20px;
-  height: 200px;
+  height: auto;
   margin: 30px;
   background-color: #eae3d8;
 
@@ -130,8 +126,6 @@ const Textcontainer = styled.div`
 `;
 
 const Section = styled.section`
-  padding: 4rem 2rem;
-  margin: 0 auto;
   max-width: 1200px;
 
   @media (max-width: 768px) {
@@ -154,6 +148,6 @@ const StyledHeading = styled.h2`
   font-size: 24px;
   color: #333;
   text-align: center;
-  margin: 60px;
+  margin: 10px;
   font-weight: bold;
 `;

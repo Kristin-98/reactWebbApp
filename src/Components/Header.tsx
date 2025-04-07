@@ -24,6 +24,11 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
 `;
 
 const NavLinks = styled.div`
@@ -33,19 +38,53 @@ const NavLinks = styled.div`
   a {
     text-decoration: none;
     color: #333;
+    font-size: 1rem;
   }
 
   a:hover {
     color: #777;
   }
+
+  @media (max-width: 768px) {
+    gap: 10px;
+
+    a {
+      font-size: 0.6rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    a {
+      font-size: 0.5rem;
+    }
+  }
 `;
 
 const WelcomeText = styled(Link)`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 10px;
-  text-align: center;
+  font-size: 1rem;  
   color: #333;
+  position: absolute;
+  left: 645px;
   text-decoration: none;
+  font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+    text-align: center;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.3rem;
+    text-align: center;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+  }
 `;
+
+

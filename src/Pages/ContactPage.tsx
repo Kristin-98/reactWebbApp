@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Newsletter from "../Components/Newsletter";
-import SpringSale from "../Components/SpringSale";
 
 export default function ContactPage() {
   return (
@@ -49,7 +48,6 @@ export default function ContactPage() {
         src="https://images.prismic.io/royaldesign/a2448e97-a181-4630-8b45-c91162dd6ba3_gubi.jpg?auto=compress,format&rect=0,0,2000,2666&w=1440&h=1920"
         alt="Serene Interiors Design"
       />
-      <SpringSale />
       <Newsletter />
     </ContactContainer>
   );
@@ -58,8 +56,16 @@ export default function ContactPage() {
 const ContactContainer = styled.div`
   align-items: center;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   margin: auto;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 5px;
+  }
 `;
 
 const TextSection = styled.section`
@@ -69,6 +75,16 @@ const TextSection = styled.section`
   max-width: 1100px;
   align-items: center;
   margin-left: 180px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  @media (max-width: 480px) {
+    margin-left: 0;
+    padding: 5px;
+  }
 `;
 
 const Title = styled.h2`
@@ -76,6 +92,14 @@ const Title = styled.h2`
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -85,13 +109,30 @@ const Paragraph = styled.p`
   line-height: 1.6;
   color: #555;
   margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 10px;
+  }
 `;
 
 const StyledImage = styled.img`
-  width: 100%;
   max-width: 35rem;
   height: 35rem;
   border-radius: 10px;
   margin: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    max-width: 30rem;
+    height: 30rem;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 20rem;
+    height: 20rem;
+  }
 `;
