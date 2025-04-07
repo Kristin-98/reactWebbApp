@@ -42,6 +42,12 @@ const FooterContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   margin: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
 `;
 
 const FooterSection = styled.div`
@@ -49,11 +55,17 @@ const FooterSection = styled.div`
   flex-direction: column;
   margin: 0 20px;
   padding: 20px;
+  min-width: 200px;
 
   h3 {
     font-size: 1.1rem;
     color: #777;
     margin-bottom: 15px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 
   span {
@@ -62,10 +74,15 @@ const FooterSection = styled.div`
     margin: 5px 0;
     cursor: pointer;
     transition: color 0.3s;
-    width: 250px;
+    width: 100%;
+    text-align: center;
 
     &:hover {
       color: #000;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
     }
   }
 `;

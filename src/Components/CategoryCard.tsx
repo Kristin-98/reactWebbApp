@@ -26,7 +26,14 @@ export default function CategoryCard() {
 const CategoryStyle = styled.div`
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 20px;  
+  margin: 40px;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 `;
 
 const CategoryItem = styled.div`
@@ -35,15 +42,19 @@ const CategoryItem = styled.div`
   cursor: pointer;
 
   img {
-    margin: 40px 10px 0px 0px;
     height: 35rem;
     width: 40rem;
     border-radius: 10px;
     display: block;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
 
     &:hover {      
       transform: scale(1.02);
-      transition: transform 0.2s ease-in-out;
+    }
+
+    @media (max-width: 480px) {
+      margin: 0;
     }
   }
 
@@ -53,15 +64,24 @@ const CategoryItem = styled.div`
     left: 30%;
     color: black;
     font-size: 1.3rem;
-    font-weight: light;
+    font-weight: 300;
     border: 1px solid black;
     padding: 10px 20px;
     border-radius: 5px;
+    background-color: rgba(255,255,255,0.8);
     transition: 0.5s;
 
     &:hover {      
       background-color: rgb(65, 65, 64);
       color: white;
+    }
+
+    @media (max-width: 480px) {
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.1rem;
+      padding: 8px 16px;
     }
   }
 `;

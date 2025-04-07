@@ -49,11 +49,23 @@ const SaleContainer = styled.div`
   border-radius: 10px;
   margin: 60px;
   background-color: #2e2d2d;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    margin: 30px;
+    gap: 20px;
+  }
 `;
 
 const TextSection = styled.section`
   flex: 1;
   max-width: 600px;
+
+ @media (max-width: 480px) {
+    text-align: center;
+  }
 `;
 
 const Title = styled.h3`
@@ -75,6 +87,11 @@ const StyledImage = styled.img`
   border-radius: 10px;
   height: 450px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+ @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  
 `;
 
 const StyledButton = styled.button`
@@ -87,4 +104,10 @@ const StyledButton = styled.button`
   height: 3rem;
   cursur: pointer;
   font-weight: bold;
+
+  @media (max-width: 480px) {
+    width: 15rem;
+    height: 2.8rem;
+    font-size: 1rem;
+  }
 `;

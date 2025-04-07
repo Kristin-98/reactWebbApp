@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import CategoryCard from "../Components/CategoryCard";
 import Newsletter from "../Components/Newsletter";
 import ProductCard from "../Components/ProductCard";
 import SpringSale from "../Components/SpringSale";
 import { mockedProducts } from "../Data";
-import CategoryCard from "../Components/CategoryCard";
 
 export default function HomePage() {
   return (
-    <>
+    <PageWrapper>
       <div>
         <BackgroundDiv>
           <Link to="/products">
@@ -31,9 +31,9 @@ export default function HomePage() {
           </p>
         </Textcontainer>
       </div>
-      <section>
+      <Section>
         <SpringSale />
-      </section>
+      </Section>
       <section>
         <StyledHeading>Popular Products</StyledHeading>
         <ProductGrid>
@@ -42,11 +42,31 @@ export default function HomePage() {
           ))}
         </ProductGrid>
       </section>
-      <CategoryCard/>
+      <CategoryCard />
       <Newsletter />
-    </>
+    </PageWrapper>
   );
 }
+
+const PageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+`;
 
 const BackgroundDiv = styled.div`
   height: 600px;
@@ -98,6 +118,28 @@ const Textcontainer = styled.div`
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
+
+  @media (max-width: 480px) {
+    height: auto;
+  }
+`;
+
+const Section = styled.section`
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem;
   }
 `;
 
